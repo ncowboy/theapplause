@@ -1,0 +1,177 @@
+/*!
+Theme Name: Blog
+Theme URI: http://underscores.me/
+Author: Blog
+Author URI: http://Blog
+Description: Blog
+Version: 1.0.0
+*/
+
+/* Стили для оформления кнопок поделиться */
+.contain .end .avtor a.un,
+.contain .end .avtor a {
+    color: #560098;
+
+}
+.btn_2,
+.btn_2 *{
+    transition-duration: .5s;
+}
+.btn_2:hover{
+    background-color: #560098;
+
+}
+.statia .f_row .social {
+    position: relative;
+    font-weight: bold;
+}
+
+.blog .hole_blog .one_blog img {
+    width: 100%;
+}
+
+body > main > div.container-fluid.t_section > div > div > div > p:nth-child(1) > span {
+    color: #fff !important;
+}
+
+body > main > div.container-fluid.s_section > div > div > div > p > span,
+body > main > div.container-fluid.t_section > div > div > div > p:nth-child(1) > span {
+    display: block;
+    font-size: 12px;
+    color: #404040;
+    font-family: "Graf";
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.mob_butthon_search {
+    cursor: pointer;
+}
+
+.statia .s_row p.otz {
+    font-weight: bold;
+}
+
+.social {
+    cursor: pointer;
+}
+
+.social.active #share,
+.social:hover #share {
+    width: 130px
+}
+
+.f_section .conslt h1 span {
+    font-style: italic;
+    font-size: 72px;
+}
+
+#share {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 0;
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    max-height: 50px;
+    overflow: hidden;
+
+}
+
+#share * {
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+#share .social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#share .social a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#share .social a i{
+    color: #9630c4;
+}
+#share .social a:hover i {
+    color: #560098;
+    cursor: pointer;
+}
+
+
+.statia .f_row .social .fas {
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+
+
+img.size-full {
+    width: 100%;
+    height: auto !important;
+    margin: 10px auto;
+
+}
+
+.statia {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.contain * {
+    line-height: 1.5;
+    font-family: "Graf";
+    color: #303030;
+    font-size: 24px;
+}
+
+.contain h2, .contain h3 {
+    font-size: 50px;
+    font-family: 'Bebas_bold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contain h3 {
+    font-size: 35px;
+}
+
+.ya-share2__counter_visible {
+    color: #fff;
+}
+
+.share {
+    margin: 20px 0;
+}
+
+.statia .s_row p.otz .fas {
+    color: #919191;
+    margin-right: 7px;
+    font-size: 12px;
+}
+
+.statia .s_row p.otz {
+    padding: 0;
+}
+
+#share .social:hover {
+    background-color: #ededed;
+}
