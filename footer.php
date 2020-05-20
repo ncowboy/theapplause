@@ -71,11 +71,11 @@ $footer = get_field('footer', 'option');
         <form class="ajax" onsubmit="yaCounter53233033.reachGoal('zayavka'); return true;">
             <input type="hidden" name="title" value="Давайте обсудим  вашу задачу ">
             <? form_function('form_block') ?>
-            <p class="title">Давайте обсудим <span>вашу задачу</span></p>
-            <span class="des">Мы свяжемся с вами в течении 15 минут для обсуждения вашего проекта</span>
+            <h3 class="title">Давайте обсудим вашу задачу</h3>
+            <span class="des">Мы свяжемся с вами в течение 15 минут для обсуждения вашего проекта</span>
             <input type="text" required name="name" placeholder="Введите ваше имя*">
             <input type="tel" required name="phone" placeholder="Введите ваш телефон*">
-            <button>обсудить задачу<span></span></button>
+            <button class="btn">Обсудить задачу<span></span></button>
             <p class="pol">Нажимая на кнопку, вы даете согласие<br/>
                 на обработку своих <a href="#">персональных данных</a></p>
         </form>

@@ -93,7 +93,7 @@
             <div class="row">
                 <div class="hole_header">
                     <div class="wrap_mobile">
-                        <a href="/" class="logo"><?= $header['logo'] ?></a>
+                        <a href="/" class="logo"><?= $header['logo'] ?><span><?= $header['logo_text_small'] ?></span></a>
                         <div class="menu">
 
                             <?php

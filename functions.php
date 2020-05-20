@@ -146,3 +146,5 @@ function share_butthon(){
 </form>
     <?
 }
+
+add_filter( 'img_caption_shortcode_width', '__return_false' );

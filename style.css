@@ -37,11 +37,10 @@ body > main > div.container-fluid.t_section > div > div > div > p:nth-child(1) >
 body > main > div.container-fluid.s_section > div > div > div > p > span,
 body > main > div.container-fluid.t_section > div > div > div > p:nth-child(1) > span {
     display: block;
-    font-size: 12px;
+    font-size: 16px;
     color: #404040;
-    font-family: "Graf";
+    font-family: "Montserrat Regular";
     margin-bottom: 35px;
-    text-transform: uppercase;
 }
 
 .mob_butthon_search {
@@ -62,8 +61,7 @@ body > main > div.container-fluid.t_section > div > div > div > p:nth-child(1) >
 }
 
 .f_section .conslt h1 span {
-    font-style: italic;
-    font-size: 72px;
+
 }
 
 #share {
@@ -109,7 +107,7 @@ body > main > div.container-fluid.t_section > div > div > div > p:nth-child(1) >
     cursor: pointer;
 }
 #share .social a i{
-    color: #9630c4;
+    color: #fb6d00;
 }
 #share .social a:hover i {
     color: #560098;
@@ -170,6 +168,9 @@ img.size-full {
 
 .statia .s_row p.otz {
     padding: 0;
+    color: #707070;
+    font-family: "Montserrat Regular" ;
+    font-size: 14px;
 }
 
 #share .social:hover {

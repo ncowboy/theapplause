@@ -25,6 +25,33 @@ $comment = get_post_meta(get_the_ID(), 'comments', true);
 
 ?>
 
+    <style>
+        .wpsisac-slick-slider button.slick-prev,
+        .wpsisac-slick-slider button.slick-prev:hover,
+        .wpsisac-slick-slider button.slick-prev:focus,
+        .wpsisac-slick-slider button.slick-next,
+        .wpsisac-slick-slider button.slick-next:hover,
+        .wpsisac-slick-slider button.slick-next:focus {
+            background: #fb6d00 !important;
+        }
+
+        .wpsisac-slick-slider.design-1 .slick-dots {
+            bottom: -16px !important;
+        }
+
+        .wpsisac-slick-slider .slick-dots li {
+            margin: 0 8px !important;
+        }
+
+        .wpsisac-slick-slider .slick-dots li button {
+            border: 1px solid #fb6d00;
+        }
+
+        .wpsisac-slick-slider .slick-dots li.slick-active button {
+            background: #fb6d00!important;
+        }
+    </style>
+
 
     <div class="container-fluid slogan">
         <div class="container">
@@ -53,37 +80,13 @@ $comment = get_post_meta(get_the_ID(), 'comments', true);
                         </p> <? share_butthon(); ?></div>
                 </div>
                 <div class="s_row">
-                    <p class="time">Время чтения:<span><?= get_field('reading_time') ?></span></p>
+                    <p class="time">Время чтения: <span><?= get_field('reading_time') ?></span></p>
                     <p class="otz"><i class="fas fa-comment-alt"></i><?= $comment ?> <?= type_com($comment) ?> </p>
                 </div>
                 <div class="desc">
                     <?php
-                    /* the_post();
-                     the_content();*/
+                    the_content();
                     ?>
-                </div>
-                <div class="desc">
-                    <p class="title">Оглавление:</p>
-                    <?php
-                    $contents = get_field('contents', get_the_ID());
-                    if (is_array($contents)) {
-                        foreach ($contents as $key_out => $content) {
-                            ?>
-                            <div class="one_acc">
-                                <div class="accar">
-                                    <p class="main_acc"><?= $content['headline'] ?></p>
-                                    <? if (is_array($content['list'])) { ?>
-                                        <ul>
-                                            <? foreach ($content['list'] as $item) { ?>
-                                                <li><a href="<?= $item['url'] ?>"><?= $item['text'] ?></a></li>
-                                            <? } ?>
-                                        </ul>
-                                    <? } ?>
-                                </div>
-                                <span class="number"><?= $key_out + 1 ?></span>
-                            </div>
-                        <? }
-                    } ?>
                 </div>
             </div>
             <div class="contain">
@@ -91,9 +94,10 @@ $comment = get_post_meta(get_the_ID(), 'comments', true);
 
                 <div class="col-md-12">
                     <div class="share">
-                    <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-                    <script src="//yastatic.net/share2/share.js"></script>
-                    <div class="ya-share2" id="my-share" data-services="collections,vkontakte,facebook,odnoklassniki,moimir" data-counter=""></div>
+                        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                        <script src="//yastatic.net/share2/share.js"></script>
+                        <div class="ya-share2" id="my-share"
+                             data-services="collections,vkontakte,facebook,odnoklassniki,moimir" data-counter=""></div>
                     </div>
                 </div>
 
@@ -170,8 +174,6 @@ $comment = get_post_meta(get_the_ID(), 'comments', true);
                     </div>
                 </div>
                 <div class="comment_block">
-
-
                     <?php if (comments_open()) {
 
                         include('inc/disqus-comments.php');

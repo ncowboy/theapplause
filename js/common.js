@@ -145,3 +145,19 @@ $(function () {
     });
 
 });
+
+$('ol[start]').each(function() {
+
+    var val = parseFloat($(this).attr("start")) - 1;
+
+    $(this).css('counter-increment','step-counter '+ val);
+
+});
+
+$('ol[start]').each(function() {
+
+    var val = parseFloat($(this).attr("start")) - 1;
+
+    $(this).css('counter-increment','counter '+ val);
+
+});

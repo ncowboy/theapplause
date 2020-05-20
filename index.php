@@ -12,7 +12,7 @@ get_header();
                     <?php
                     $screen_1 = get_field('screen_1');
                     echo $screen_1['text'] ?>
-                    <a class="btn" data-fancybox data-src="#forma" href="javascript:;">ПОЛучить
+                    <a class="btn" data-fancybox data-src="#forma" href="javascript:;">Получить
                         консультацию<span></span>
                     </a>
                 </div>
@@ -40,7 +40,7 @@ get_header();
                     <?php
                     $screen_1 = get_field('screen_3');
                     echo $screen_1['text'] ?>
-                    <a href="<?= $screen_1['url'] ?>" class="btn_2">читать подробнее<span></span></a>
+                    <a href="<?= $screen_1['url'] ?>" class="btn btn_2">Читать подробнее<span></span></a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@ $fourty = get_field('fourty');
                 $reviews = get_field('reviews');
                 ?>
                 <span><?= $reviews['span'] ?></span>
-                <h4><?= $reviews['h4'] ?></h4>
+                <h2><?= $reviews['h4'] ?></h2>
                 <div class="main_client">
                     <?php foreach ($reviews ['main_client'] as $item) { ?>
                         <div class="main_c" style="background-image: url(<?= $item['img'] ?>);">
@@ -119,7 +119,7 @@ $fourty = get_field('fourty');
                     ?>
                 </div>
                 <div class="to_blog">
-                    <a href="<?= get_category_link(6) ?>" class="btn_2">перейти в блог <span></span></a>
+                    <a href="<?= get_category_link(6) ?>" class="btn btn_2">Перейти в блог <span></span></a>
                 </div>
             </div>
         </div>

@@ -133,7 +133,7 @@
         height: 30px;
         width: 40px;
         margin-left: 10px;
-        background-color: #6200ae;
+        background-color: #fb6d00;
         border: none;
         background-image: url(../img/small_arrow.png);
         background-repeat: no-repeat;
@@ -243,6 +243,11 @@
 
     .contain .slider_block .slider_l .item_l img {
         max-width: 60%;
+    }
+
+
+    .wpsisac-slick-slider.design-1 .wpsisac-image-slide img {
+        max-width: 60% !important;
     }
 
     .contain .slider_block .slider_l .slick-prev,
@@ -486,7 +491,7 @@
     }
 
     .clients .main_client .main_c span {
-        background-image: url(../img/kryg.png);
+        background-image: url(../img/kryg_o.png);
         width: 50px;
         height: 50px;
         border-radius: 60px;
@@ -552,6 +557,17 @@
 }
 
 @media only screen and (max-width: 550px) {
+    h3 {
+
+    }
+    .hole_header a.logo {
+        flex-direction: column;
+        font-size: 16px;
+    }
+    .hole_header a.logo span {
+        font-size: 10px;
+        margin-left: -12px;
+    }
     .contain .tags span {
         margin: 0;
     }
@@ -591,7 +607,8 @@
     }
 
     .slogan.v2 h1 {
-        font-size: 35px;
+        font-size: 42px;
+        line-height: 1;
     }
 
     .text_wrap h2 a, .text_wrap h3 a {
@@ -613,10 +630,10 @@
     }
 
     .hole_buttons {
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -689,8 +706,9 @@
     }
 
     .hole_buttons button {
-        max-width: 120px;
-        font-size: 16px;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 16px;
     }
 
     .contain .slider_block .title {
@@ -704,6 +722,28 @@
 
     .contain .slider_block .slider_l .item_l img {
         max-width: 100%;
+    }
+
+    .wpsisac-slick-slider.design-1 .wpsisac-image-slide img {
+        max-width: 100% !important;
+    }
+
+    .wpsisac-slick-slider button.slick-next,
+    .wpsisac-slick-slider button.slick-prev {
+        display: none !important;
+    }
+
+    .wpsisac-slick-slider .slick-dots {
+        display: block!important;
+    }
+
+    .wpsisac-slick-slider .slick-dots li {
+        margin: 0 8px!important;
+    }
+
+    .wpsisac-slick-slider .slick-dots li:before
+    {
+        display: none;
     }
 
     .slick-dots .slick-active button {
@@ -812,12 +852,46 @@
         font-size: 18px;
     }
 
-    .statia .desc p {
+    .statia .desc p,
+    .statia .desc p span {
         font-size: 16px;
     }
 
+    .desc ol li a,
+    .desc ol + ul li a,
+    .desc ul li {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .desc ul {
+        padding: 0;
+    }
+
+    .desc ul > li:before {
+        width: 6px;
+        height: 6px;
+        border: 1px solid #fb6d00;
+        margin-right: 8px;
+    }
+
+    .statia .desc p a {
+        font-size: 16px;
+    }
+
+    .statia .desc blockquote {
+        padding: 32px 24px;
+    }
+
     .slogan h1 {
-        font-size: 35px;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .statia .desc h2,
+    .statia .desc .post-contents{
+        font-size: 34px;
+        line-height: 38px;
     }
 
     .text_wrap h2, .text_wrap h3 {
@@ -1046,11 +1120,12 @@
     }
 
     .hole_buttons button {
-        max-width: 87px;
+        /*max-width: 87px;*/
+
     }
 
     .hole_buttons button span {
-        display: none;
+        /*display: none;*/
     }
 
 }
@@ -1090,4 +1165,10 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
 
+}
+
+@media only screen and (max-width: 40.0625em) {
+    .wpsisac-image-slide, .wpsisac-slide-wrap {
+        height: auto!important;
+    }
 }

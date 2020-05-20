@@ -64,7 +64,7 @@ $cat_select = (int)(isset($_GET['cat_select'])) ? $_GET['cat_select'] : $categor
                             <label for="radio3"><span>Самые обсуждаемые</span></label>
                         </div>
                     </div>
-                    <button>Применить <span></span></button>
+                    <button class="btn btn_2">Применить <span></span></button>
                 </div>
             </form>
         </div>
